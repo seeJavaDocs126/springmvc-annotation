@@ -19,12 +19,13 @@ import org.springframework.web.servlet.view.JstlView;
  * @Date 2021-03-09 17:04
  * @Version V1.0
  * WebMvcConfigurerAdapter:该类一般用于springmvc的扩展
- *
- *
- *
  */
 @Configuration
-@EnableWebMvc  // 启用 SpringMVC ，相当于 xml中的 <mvc:annotation-driven/> ,启用了springmvc基本配置
+/**
+ * 启用 SpringMVC ，相当于 xml中的 <mvc:annotation-driven/> ,启用了springmvc基本配置
+ * 特别注意：在单元测试时，需要注释掉
+  */
+//@EnableWebMvc
 @ComponentScan("com.joyin")
 public class MyMVCConfig extends WebMvcConfigurerAdapter {
     @Bean
