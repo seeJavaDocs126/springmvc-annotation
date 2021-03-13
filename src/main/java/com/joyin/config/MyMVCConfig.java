@@ -25,7 +25,7 @@ import org.springframework.web.servlet.view.JstlView;
  * 启用 SpringMVC ，相当于 xml中的 <mvc:annotation-driven/> ,启用了springmvc基本配置
  * 特别注意：在单元测试时，需要注释掉
   */
-//@EnableWebMvc
+@EnableWebMvc
 @ComponentScan("com.joyin")
 public class MyMVCConfig extends WebMvcConfigurerAdapter {
     @Bean
